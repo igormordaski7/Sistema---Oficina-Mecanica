@@ -1,0 +1,30 @@
+### GET all clientes
+GET http://localhost:5127/clientes
+Accept: application/json
+
+### GET cliente by id
+GET http://localhost:5127/clientes/1
+Accept: application/json
+
+### Create new cliente
+POST http://localhost:5127/clientes
+Content-Type: application/json
+
+{
+    "nome": "Igor Mordaski",
+    "telefone": "41 98465-3839",
+    "email": "igormordaski9@gmail.com"
+}
+
+### Update an existing cliente
+PUT http://localhost:5127/clientes/1
+Content-Type: application/json  
+
+{
+    "nome": "Camili Ferreira",
+    "telefone": "41 8893-9219",
+    "email": "camiliferreira7@gmail.com"
+}
+
+### Delete a cliente
+DELETE http://localhost:5127/clientes/1
